@@ -1,0 +1,32 @@
+.header__navigation-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 7rem;
+
+    @media only screen and (max-width:900px){
+        justify-content: space-around;
+    }
+    @media only screen and (max-width:600px){
+        // flex-direction: column;
+        // align-items: center;
+        display: none;
+    }
+
+    &-item{
+        padding:3rem 3rem 0.5rem 3rem;
+        font-size:2rem;
+        cursor: pointer;
+        border-bottom:0.1rem solid transparent;
+        
+        &:hover{
+            border-bottom:0.1rem solid $color-primary;
+        }
+
+        &--number{
+            font-family: 'Stardos Stencil', cursive;
+            color:$color-primary;
+        }
+    }
+}

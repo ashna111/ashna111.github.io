@@ -1,0 +1,40 @@
+.introduction{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media only screen and (max-width:600px){
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__image{
+        width: 32%;
+        @media only screen and (max-width:600px){
+            margin-top:2rem;
+        }
+    }
+
+    &__data{
+        width:45%;
+        @media only screen and (max-width:600px){
+            margin-top:2rem;
+        }
+
+        &--1{
+            font-size: 2.5rem;
+            display: block;
+        }
+        &--2{
+            font-size: 2.3rem;
+            display: block;
+        }
+        &--3{
+            padding-top:1.5rem;
+            font-size: 1.7rem;
+            display: block;
+        }
+    }
+}

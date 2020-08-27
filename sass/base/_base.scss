@@ -1,0 +1,25 @@
+//Breakpoints
+//1200px, 900px, 600px
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; //1rem=10px
+
+    @media only screen and (max-width:900px){
+        font-size: 56.25% //say we want 1 rem=9px; then 9/16 = 56.25%
+    }
+
+    @media only screen and (max-width:600px){
+        font-size: 50%; //say we want 1 rem=8px; then 8/16 = 50%
+    }
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
