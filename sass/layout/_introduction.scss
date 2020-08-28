@@ -4,6 +4,7 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 6rem;
 
     @media only screen and (max-width:600px){
         flex-direction: column;
@@ -35,6 +36,19 @@
             padding-top:1.5rem;
             font-size: 1.7rem;
             display: block;
+        }
+    }
+
+    &__important-text{
+        border-bottom:0.2rem solid $color-primary ;
+
+        &:hover{
+            background-color: $color-primary;
+            cursor: pointer;
+            color:$color-white;
+            transition-property: all;
+            transition-delay: 0.2s;
+            transition-timing-function: ease-in-out;
         }
     }
 }

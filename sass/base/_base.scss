@@ -18,8 +18,17 @@ html {
         font-size: 50%; //say we want 1 rem=8px; then 8/16 = 50%
     }
 }
-
 body {
     box-sizing: border-box;
     font-family: 'Roboto Slab', serif;
+    color:$color-text;
+}
+.secondary-heading{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+
+    &--number{
+        font-family: 'Stardos Stencil', cursive;
+        color:$color-primary;
+    }
 }
