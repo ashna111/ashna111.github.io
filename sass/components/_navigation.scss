@@ -19,12 +19,23 @@
         border-bottom:0.2rem solid transparent;
         
         &:hover{
-            border-bottom:0.2rem solid $color-primary;
+            border-style: solid;
+            border-image-slice: 1;
+            border-width: 0.2rem;
+            border-right:transparent;
+            border-left:transparent;
+            border-top:transparent;
+            border-image-source: linear-gradient(to left,transparent,rgba($color-primary,0.5));
         }
 
         &--number{
             font-family: 'Stardos Stencil', cursive;
             color:$color-primary;
+        }
+
+        & a:link,a:focus,a:active,a:visited,a:hover{
+            text-decoration: none;
+            color:$color-text;
         }
     }
 }

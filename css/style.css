@@ -42,10 +42,19 @@ body {
     cursor: pointer;
     border-bottom: 0.2rem solid transparent; }
     .header__navigation-list-item:hover {
-      border-bottom: 0.2rem solid #02AAB0; }
+      border-style: solid;
+      border-image-slice: 1;
+      border-width: 0.2rem;
+      border-right: transparent;
+      border-left: transparent;
+      border-top: transparent;
+      border-image-source: linear-gradient(to left, transparent, rgba(2, 170, 176, 0.5)); }
     .header__navigation-list-item--number {
       font-family: 'Stardos Stencil', cursive;
       color: #02AAB0; }
+    .header__navigation-list-item a:link, .header__navigation-list-item a:focus, .header__navigation-list-item a:active, .header__navigation-list-item a:visited, .header__navigation-list-item a:hover {
+      text-decoration: none;
+      color: #2e2e2e; }
 
 .introduction {
   display: flex;
@@ -91,7 +100,8 @@ body {
 .work {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 3rem; }
   .work__timeline {
     display: flex;
     flex-direction: column;
@@ -143,3 +153,45 @@ body {
     @media only screen and (max-width: 600px) {
       .work__duration {
         align-self: center; } }
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .contact__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 6rem; }
+    @media only screen and (max-width: 600px) {
+      .contact__box {
+        flex-direction: column;
+        justify-content: space-between; } }
+  .contact__details {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .contact__image {
+    width: 32%; }
+  .contact__heading--1 {
+    font-size: 1.95rem;
+    font-family: 'Stardos Stencil', cursive; }
+  .contact__heading--2 {
+    font-size: 1.7rem;
+    margin-top: 1rem; }
+  .contact__link {
+    display: flex;
+    flex-direction: row; }
+    @media only screen and (max-width: 600px) {
+      .contact__link {
+        flex-direction: column; } }
+    .contact__link-item {
+      margin: 1rem; }
+      .contact__link-item:hover {
+        transform: translateY(-0.1rem); }
+      @media only screen and (max-width: 600px) {
+        .contact__link-item img {
+          width: 70%; } }
