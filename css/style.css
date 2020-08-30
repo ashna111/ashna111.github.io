@@ -24,6 +24,10 @@ body {
     font-family: 'Stardos Stencil', cursive;
     color: #02AAB0; }
 
+::selection {
+  background-color: #02AAB0;
+  color: #ffffff; }
+
 .header__navigation-list {
   list-style-type: none;
   display: flex;
@@ -55,6 +59,49 @@ body {
     .header__navigation-list-item a:link, .header__navigation-list-item a:focus, .header__navigation-list-item a:active, .header__navigation-list-item a:visited, .header__navigation-list-item a:hover {
       text-decoration: none;
       color: #2e2e2e; }
+
+.footer {
+  height: 4rem;
+  width: 100%;
+  position: relative; }
+  .footer__background--1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(rgba(2, 170, 176, 0.7), rgba(2, 170, 176, 0.7));
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(100% 0, 100% 100%, 20% 100%);
+    z-index: 5; }
+    @media only screen and (max-width: 600px) {
+      .footer__background--1 {
+        display: none; } }
+  .footer__background--2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background-image: linear-gradient(rgba(0, 205, 172, 0.9), rgba(0, 205, 172, 0.9));
+    clip-path: polygon(0 0, 0 100%, 50% 100%);
+    z-index: 2; }
+    @media only screen and (max-width: 600px) {
+      .footer__background--2 {
+        display: none; } }
+  .footer__copyright {
+    position: absolute;
+    right: 7%;
+    top: 30%;
+    color: #ffffff;
+    font-size: 1.5rem;
+    z-index: 6; }
+    @media only screen and (max-width: 600px) {
+      .footer__copyright {
+        top: 50%;
+        right: 50%;
+        color: #2e2e2e;
+        transform: translate(50%, 50%);
+        font-family: 'Stardos Stencil', cursive; } }
 
 .introduction {
   display: flex;
@@ -96,6 +143,9 @@ body {
       transition-property: all;
       transition-delay: 0.2s;
       transition-timing-function: ease-in-out; }
+  .introduction__resume-link:link, .introduction__resume-link:active, .introduction__resume-link:focus, .introduction__resume-link:visited {
+    text-decoration: none;
+    color: #2e2e2e; }
 
 .work {
   display: flex;
