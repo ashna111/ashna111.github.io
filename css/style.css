@@ -24,6 +24,13 @@ body {
     font-family: 'Stardos Stencil', cursive;
     color: #02AAB0; }
 
+.tab {
+  padding: 0.5rem;
+  background-color: rgba(2, 170, 176, 0.8);
+  border-radius: 0.7rem;
+  color: white;
+  margin-right: 0.4rem; }
+
 ::selection {
   background-color: #02AAB0;
   color: #ffffff; }

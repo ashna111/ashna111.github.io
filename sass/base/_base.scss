@@ -32,6 +32,13 @@ body {
         color:$color-primary;
     }
 }
+.tab{
+    padding:0.5rem;
+    background-color: rgba($color-primary,0.8);
+    border-radius: 0.7rem;
+    color:rgba($color-white,1);
+    margin-right: 0.4rem;
+}
 
 //selection
 ::selection{
