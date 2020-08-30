@@ -126,12 +126,14 @@ body {
     width: 32%; }
     @media only screen and (max-width: 600px) {
       .introduction__image {
-        margin-top: 2rem; } }
+        margin-top: 2rem;
+        width: 50%; } }
   .introduction__data {
     width: 45%; }
     @media only screen and (max-width: 600px) {
       .introduction__data {
-        margin-top: 2rem; } }
+        margin-top: 2rem;
+        width: 70%; } }
     .introduction__data--1 {
       font-size: 2.5rem;
       display: block; }
@@ -288,6 +290,9 @@ body {
     align-items: center; }
   .contact__image {
     width: 32%; }
+    @media only screen and (max-width: 600px) {
+      .contact__image {
+        width: 50%; } }
   .contact__heading--1 {
     font-size: 1.95rem;
     font-family: 'Stardos Stencil', cursive; }

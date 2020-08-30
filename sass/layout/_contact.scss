@@ -26,6 +26,9 @@
 
     &__image{
         width:32%;
+        @media only screen and (max-width:600px){
+            width:50%;
+        }
     }
 
     &__heading--1{
