@@ -139,8 +139,8 @@ body {
       cursor: pointer;
       color: #ffffff;
       transition-property: all;
-      transition-delay: 0.2s;
-      transition-timing-function: ease-in-out; }
+      transition-delay: 0.3s;
+      transition-timing-function: linear; }
   .introduction__resume-link:link, .introduction__resume-link:active, .introduction__resume-link:focus, .introduction__resume-link:visited {
     text-decoration: none;
     color: #2e2e2e; }
