@@ -133,14 +133,12 @@ body {
       font-size: 1.7rem;
       display: block; }
   .introduction__important-text {
-    border-bottom: 0.2rem solid #02AAB0; }
+    border-bottom: 0.2rem solid #02AAB0;
+    transition: 0.4s ease; }
     .introduction__important-text:hover {
       background-color: #02AAB0;
       cursor: pointer;
-      color: #ffffff;
-      transition-property: all;
-      transition-delay: 0.3s;
-      transition-timing-function: linear; }
+      color: #ffffff; }
   .introduction__resume-link:link, .introduction__resume-link:active, .introduction__resume-link:focus, .introduction__resume-link:visited {
     text-decoration: none;
     color: #2e2e2e; }
